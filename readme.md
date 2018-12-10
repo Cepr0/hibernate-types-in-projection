@@ -40,11 +40,11 @@ public class PostgreSQLCustomDialect extends PostgreSQL95Dialect {
 }
 ```
 
-Then PostgreSQL aggregate function `array_agg` is used then in the query above, 
+When PostgreSQL aggregate function `array_agg` is used in the query above, 
 then the following exception is raised:
 
     org.springframework.orm.jpa.JpaSystemException: Could not instantiate Type: com.vladmihalcea.hibernate.type.array.StringArrayType;
     
-If `json_agg` function is used then we have another exception:
+If `json_agg` function is used, then we have another exception:
 
     java.lang.IllegalArgumentException: Projection type must be an interface!  
